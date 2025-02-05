@@ -1,5 +1,7 @@
 ## PokeData
 
+🚀 Nuestra web es tu puerta de entrada al fascinante mundo Pokémon. Gracias a la PokeAPI, te ofrecemos una herramienta gratuita y completa para explorar todas las criaturas de este universo.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/JomaorX/PokeData/refs/heads/main/imagenes/logo.png" alt="PokeData Logo">
 </p>
