@@ -1,0 +1,369 @@
+:root {
+    --fondo-color: #002255;
+}
+
+::selection{
+    background-color: #ffc400;
+    color: #666;
+}
+@font-face {
+    font-family: 'mi-fuente'; /* Nombre de la fuente */
+    src:url('fuentes/PermanentMarker-Regular.ttf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+}
+
+header{
+    background: var(--fondo-color);
+    position:sticky;
+    font-family: 'mi-fuente';
+    width: 100%;
+    height: 90px;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease;
+}
+
+nav{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    padding: 6px;;
+}
+
+nav ul li:hover {
+    transform: scale(1.17);
+    border: solid 1px #fff3;
+    border-radius: 22px;
+}
+nav ul li:active{
+    transform: scale(1.1);
+    color: #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #ddd;
+    text-shadow: 4px 4px 8px #15214C;
+}
+
+nav a:hover{
+    color: #19AFEF;
+}
+nav a:active{
+    color: #fff;
+}
+section{
+    scroll-margin-top: 90px;
+    width: 85vw;
+    padding: 22px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article{
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 10px  #19AFEF;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    color: #19AFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff1;
+}
+footer img{
+    filter: invert(1) brightness(2);
+
+}
+
+h2{
+    font-family: 'mi-fuente';
+}
+
+/* background-color: #F9CB8D;
+color: #a8733a; */
+#servicios{
+    background-color: #98CDFB;
+    color: #043862;
+    display: flex;  
+    justify-content:space-evenly;
+}
+
+#inicio{
+    background-color: #CBFB98;
+    color: #2F5606;
+    margin-top: 30px;
+}
+
+#que-hace{
+    background-color: #FAF55F;
+    color: #704900;
+}
+
+#unete{
+    background-color: #FFB9CA;
+    color: #7A001C;
+    margin-bottom: 30px;
+}
+
+.section-container{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    width: 85%;
+}
+
+.section-container img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+article{
+    background-color: #48e7;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resultado{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    border:solid 4px #043862;
+    background-color: #F9CB8D;
+    color: #731;
+    margin: 10px;
+}
+
+.resultado h2, .resultado h4{
+    background-color: #fff5;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+.centrar-card{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.card{
+border:solid 8px #a8733a;
+border-radius: 8px;
+background-color: #5205;
+transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px #731;
+}
+
+.card-imagen{
+    background-color: #a706;
+    padding: 10px;
+    border-bottom:solid 4px #a70f;
+}
+
+.card-imagen img{
+    max-width: 240px;;
+}
+
+.card-imagen:not(.img-oculto) img:active {
+    filter: drop-shadow(0 4px 6px rgba(255, 0, 0, 0.5));
+}
+
+.card-stats{
+    display: flex;
+    justify-content: center;
+}
+
+.stats{
+    color: #730;
+    padding: 9px;
+    text-align: justify;
+}
+
+.evoluciones{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222c;
+    border-radius:0px 0px 4px 4px;
+    grid: 10px;
+    color: #F9CB8D;
+}
+
+.cent{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.cent .p1 {
+    display: none; /* Esto ocultará completamente el primer <p> */
+}
+
+.nam{
+    font-family: 'mi-fuente';
+}
+.evoluciones img{
+    max-width: 120px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #043862;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
+input:focus {
+    border-color: #48e;
+    box-shadow: 0 0 12px #043862;
+}
+
+
+input::placeholder{
+    color: #043862;
+    font-size: small;
+}
+
+button {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #48e;
+    color: #054175;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #4a7bd8;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.inline{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #98CDFB;
+}
+
+.arth2{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fffc;
+}
+
+.text-oculto{
+    visibility: hidden;
+}
+
+.img-oculto img{
+    filter: grayscale(100%) brightness(0.1);
+}
+
+audio {
+    width: 70%;
+}
+
+.audio-oculto{
+    visibility: hidden;
+}
+
+.mensaje1,
+.mensaje2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 1000;
+    cursor: pointer;
+    font-weight: 900;
+    color: #48e;
+    background-color: #000b; /* Color de fondo */
+}
+
+.mensaje2{
+    color: #f72;
+}

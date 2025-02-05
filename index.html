@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeData</title>
+    <link rel="icon" href="imagenes/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Título que aparecerá -->
+  <meta property="og:title" content="PokeData" />
+  
+  <!-- Descripción de tu página -->
+  <meta property="og:description" content="Consulta información detallada sobre Pokémon. Una herramienta para los amantes de Pokémon." />
+  
+  <!-- URL de tu página -->
+  <meta property="og:url" content="https://pokedata-sm2i.onrender.com" />
+  
+  <!-- Imagen que aparecerá (debe estar alojada y accesible públicamente) -->
+  <meta property="og:image" content="https://pokedata-sm2i.onrender.com/imagenes/logo.png" />
+  
+  <!-- Tipo de contenido (generalmente 'website') -->
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="navbar">
+        <nav>
+            <img src="imagenes/logo.png" alt="Logo PokeData">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que-hace">Sobre la web</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#unete">Unete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section id="inicio" class="section-container">
+            <div>
+                <h2>¿Qué son los Pokémon?</h2>
+                <p>Los Pokémon son criaturas de todo tipo de formas y tamaños que viven junto a los humanos. Quienes se
+                    conocen como <strong>"Entrenadores Pokémon"</strong> forjan una amistad duradera con sus compañeros
+                    Pokémon y, como equipo, viajan en busca de aventuras, entrenan para mejorar sus habilidades y
+                    combaten en competiciones amistosas. En sus viajes, los Pokémon crecen, ganan experiencia y, en
+                    ocasiones, evolucionan a un Pokémon más fuerte. Si preguntas a cualquier niño cuál es su Pokémon
+                    favorito, te responderá con entusiasmo. <strong>¡Existen más de mil Pokémon que descubrir junto a
+                        tus hijos!</strong></p>
+            </div>
+            <img src="imagenes/pokemon.jpg" alt="pokemons">
+        </section>
+
+        <section id="que-hace" class="section-container">
+            <div>
+                <h2>¿Qué hace esta web?</h2>
+                <p>Nuestra web es tu puerta de entrada al fascinante mundo Pokémon. <strong>Gracias a la
+                    PokeAPI</strong>, te ofrecemos una herramienta gratuita y completa para explorar todas las
+                    criaturas de este universo. ¿Quieres conocer las estadísticas de tu Pokémon favorito? ¿O
+                    quizás descubrir sus evoluciones? ¡Aquí encontrarás toda la información que necesitas! Con nuestra
+                    sencilla interfaz, podrás buscar cualquier Pokémon de la 1ª generación por su nombre en nuestra <strong>Pokédex</strong>.
+                    Además, podrás consultar sus características, habilidades, evoluciones, tipos y mucho más.
+                    <strong>¡Perfecta para entrenadores novatos y expertos por igual!</strong></p>
+                </div>
+                <img src="imagenes/pokemon2.jpg" alt="pokemon2">
+        </section>
+
+        <section id="servicios">
+            <article>
+                <h2 class="arth2">Pokedex</h2>
+                <div class="article-container">
+                    <div class="resultado">
+                    </div>
+                    <div class="inline">
+                        <input type="text" name="" id="nombrePok" placeholder="Nombre del Pokémon">
+                        <button  id="apiButton">BUSCAR</button>
+                    </div>
+                </div>
+            </article>
+            <h2>Servicios</h2>
+            <article>
+                <h2 class="arth2">¿Cuál es este Pokémon?</h2>
+                <div class="article-container">
+                <div class="resultado resultado2">
+                </div>
+                <div class="inline">
+                <input type="text" name="" id="nombrePok2" placeholder="¿Cuál es este Pokémon?">
+                <button  id="apiButton2">➦</button>
+                <button  id="apiButton3">Siguiente</button>
+                </div>
+                </div>
+            </article>
+        </section>
+        <section id="unete" class="section-container">
+        <div>
+            <h2>Únete a la comunidad</h2>
+            <p>El Club Pokémon está dirigido a los fans más jóvenes y es un lugar donde puedes conocer a otros fans de
+                tu comunidad en ubicaciones con un ambiente familiar. No existen las competiciones formales en el Club
+                Pokémon: ¡solo ofrece la oportunidad de participar en actividades Pokémon e interactuar con otros niños
+                que comparten el mismo interés por todo lo relacionado con Pokémon!</p>
+            </div>
+                <img src="imagenes/pokemon3.jpg" alt="pokemon3">
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 PokeData. Todos los derechos reservados.</p>
+        <a href="https://github.com/JomaorX/PokeData" target="_blank"><img src="imagenes/github.png" alt="logo github" title="GitHub"></p>
+        <a href="https://www.linkedin.com/in/martinez97pro/" target="_blank"><img src="imagenes/linkedin.png" alt="logo linkedin" title="Linkedin"></p>
+    </footer>
+    <script src="scriptJQ.js"></script>
+</body>
+
+</html>
+
